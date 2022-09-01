@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Book a Call</h2>
+        <h3>Book a call slot and our representative will call you </h3>
+
+        <hr>
+        <form  onsubmit="register(event)">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="name" class="area" required><br>
+            <label for="mail">Email:</label><br>
+            <input type="email" id="mail" name="mail" class="area" required><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" class="area" maxlength="10" required><br>
+            Time for call:<br>
+            <input type="date" id="date" name="date" class="date" required>
+            <input type="time" id="time" name="time" class="date" required><br>
+            <input type="submit" class="sub" value="GET A CALL">
+        </form>
+    </div>
+    <script>
+        
+      function register(e){
+        e.preventDefault();
+        console.log(e.target.name.value);
+        console.log(e.target.mail.value);
+        console.log(e.target.phone.value);
+        console.log(e.target.date.value);
+        console.log(e.target.time.value);
+        // console.log(document.getElementById('fname').value);
+        // console.log(document.getElementById('mail').value);
+        // console.log(document.getElementById('phone').value);
+        // console.log(document.getElementById('date').value);
+        // console.log(document.getElementById('time').value);
+      }
+
+    </script>
+</body>
+</html>
